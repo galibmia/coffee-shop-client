@@ -15,3 +15,13 @@
     background-color: transparent;
     color: #ffffff;
 }
+
+@media screen and (max-width: 490px) {
+    .ms-custom-50{
+        margin-left: 20px;
+    }
+
+    .hero-bg{
+        height: 400px;
+    }
+}
