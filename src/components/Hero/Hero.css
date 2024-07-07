@@ -1,0 +1,17 @@
+.hero-bg{
+    background-image: url('../../assets/images/more/3.png');
+    height: 950px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ms-custom-50{
+    margin-left: 50%;
+}
+.btn-custom{
+    border: 1px solid #E3B577;
+}
+.btn-custom:hover{
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+}
