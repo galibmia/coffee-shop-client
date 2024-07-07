@@ -1,0 +1,7 @@
+.products-bg{
+    margin-top: 120px;
+    background-image: url('../../assets/images/more/1.png');
+    height: 120vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

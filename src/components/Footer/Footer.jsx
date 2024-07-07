@@ -10,7 +10,7 @@ import { IoIosMail } from "react-icons/io";
 const Footer = () => {
     return (
         <div>
-            <div className=' w-full md:w-9/12 px-4 mx-auto mt-5 md:mt-32 mb-12 flex flex-col md:flex-row gap-5 md:gap-40 justify-center md:justify-between'>
+            <div className=' w-full md:w-9/12 px-4 mx-auto mt-5 mb-12 flex flex-col md:flex-row gap-5 md:gap-40 justify-center md:justify-between'>
                 <div className='w-full md:w-1/2'>
                     <img className='w-20 h-24' src={logo} alt="" />
                     <h1 className='text-[#331A15] text-5xl rancho-regular mt-6'>Espresso Emporium</h1>
