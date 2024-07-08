@@ -6,16 +6,14 @@ import BackHome from './shared/BackHome';
 
 const View = () => {
     const loadedData = useLoaderData()
-
     const {name, chef, supplier, taste, category, details, photo, price} = loadedData;
-    console.log(loadedData);
     return (
         <div className='w-9/12 mx-auto mt-8'> 
             <BackHome></BackHome>
             <div className="w-1/2 mx-auto mt-5 card card-side shadow-xl p-4 items-center">
-                <figure>
+                <figure className='w-full'>
                     <img
-                        className='h-96'
+                        className=''
                         src={photo}
                         alt="Movie" />
                 </figure>

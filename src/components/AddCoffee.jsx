@@ -1,6 +1,5 @@
 import React from 'react';
 import BackHome from './shared/BackHome';
-import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
 const AddCoffee = () => {
@@ -18,7 +17,6 @@ const AddCoffee = () => {
         const price = form.price.value;
 
         const newCoffee = { name, chef, supplier, taste, category, details, photo, price };
-        console.log(newCoffee);
 
         fetch('http://localhost:5000/coffees', {
             method: "POST",

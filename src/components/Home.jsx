@@ -51,7 +51,9 @@ const Home = () => {
             </div>
 
             {/* Our Popular Products Section */}
+            <div id='ourProducts'>
             <OurProducts coffeesData={coffeesData} setCoffeesData={setCoffeesData}></OurProducts>
+            </div>
 
             {/* Follow instagram section */}
             <div className='mb-32'>
