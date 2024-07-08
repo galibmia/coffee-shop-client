@@ -4,6 +4,12 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+.footer-top-bg {
+    background-image: url('../../assets/images/more/13.jpg');
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 .custom-border {
     border-radius: 5px;
@@ -17,4 +23,11 @@
 .text-area {
     resize: none;
     height: 130px;
+}
+
+@media screen and (max-width: 490px) {
+
+    .footer-top-bg{
+        height: auto;
+    }
 }

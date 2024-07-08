@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Hero from './Hero/Hero';
 import img1 from "../assets/images/icons/1.png"
 import img2 from "../assets/images/icons/2.png"
@@ -13,11 +13,17 @@ import coffeeImg6 from "../assets/images/cups/Rectangle 15.png"
 import coffeeImg7 from "../assets/images/cups/Rectangle 16.png"
 import coffeeImg8 from "../assets/images/cups/Rectangle 9.png"
 import OurProducts from './OurProducts/OurProducts';
+import { useLoaderData } from 'react-router-dom';
 
 const Home = () => {
+    const loadedCoffeesData = useLoaderData();
+    const [coffeesData, setCoffeesData] = useState(loadedCoffeesData);
+    
     return (
         <div>
+            {/* Hero Section */}
             <Hero></Hero>
+
             {/* Service Section */}
             <div className='bg-[#ECEAE3] '>
                 <div className='w-full md:w-9/12 px-4 mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 py-10'>
@@ -43,8 +49,11 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+
             {/* Our Popular Products Section */}
-            <OurProducts></OurProducts>
+            <OurProducts coffeesData={coffeesData} setCoffeesData={setCoffeesData}></OurProducts>
+
+            {/* Follow instagram section */}
             <div className='mb-32'>
                 <p className='text-[#1B1A1A] text-lg raleway-regular text-center'>Follow Us Now</p>
                 <h1 className='text-[#331A15] text-6xl rancho-regular text-center mt-2'>Follow on Instagram</h1>
@@ -57,7 +66,6 @@ const Home = () => {
                 <img className='w-full' src={coffeeImg6} alt="" />
                 <img className='w-full' src={coffeeImg7} alt="" />
                 <img className='w-full' src={coffeeImg8} alt="" />
-
                 </div>
             </div>
         </div>
