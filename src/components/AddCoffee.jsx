@@ -18,7 +18,7 @@ const AddCoffee = () => {
 
         const newCoffee = { name, chef, supplier, taste, category, details, photo, price };
 
-        fetch('http://localhost:5000/coffees', {
+        fetch('https://coffee-shop-server-376z.onrender.com/coffees', {
             method: "POST",
             headers: {
                 "content-type": 'application/json'

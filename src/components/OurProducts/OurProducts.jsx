@@ -21,7 +21,7 @@ const OurProducts = ({ coffeesData, setCoffeesData }) => {
             confirmButtonText: "Yes, delete it!"
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/coffees/${id}`, {
+                fetch(`https://coffee-shop-server-376z.onrender.com/coffees/${id}`, {
                     method: "DELETE"
                 })
                     .then(res => res.json())

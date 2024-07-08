@@ -26,7 +26,7 @@ const Edit = () => {
         console.log(_id);
 
 
-        fetch(`http://localhost:5000/coffees/${_id}`, {
+        fetch(`https://coffee-shop-server-376z.onrender.com/coffees/${_id}`, {
             method: "PUT",
             headers: {
                 "content-type": "application/json"
