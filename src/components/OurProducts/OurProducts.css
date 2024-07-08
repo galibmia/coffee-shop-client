@@ -6,3 +6,9 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+@media screen and (max-width: 490px) {
+    .products-bg{
+        background: none;
+    }
+}

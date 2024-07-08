@@ -8,12 +8,12 @@ const View = () => {
     const loadedData = useLoaderData()
     const {name, chef, supplier, taste, category, details, photo, price} = loadedData;
     return (
-        <div className='w-9/12 mx-auto mt-8'> 
+        <div className='w-11/12 md:w-9/12 mx-auto mt-8'> 
             <BackHome></BackHome>
-            <div className="w-1/2 mx-auto mt-5 card card-side shadow-xl p-4 items-center">
-                <figure className='w-full'>
+            <div className="w-full md:w-9/12 mx-auto mt-5 flex flex-col md:flex-row shadow-xl items-center">
+                <figure className='md:w-full'>
                     <img
-                        className=''
+                        className='w-auto mx-auto'
                         src={photo}
                         alt="Movie" />
                 </figure>
